@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mazegen-sabo-gla-bgebreeg"
+version = "1.0.0"
+description = "Stack-based maze generator with BFS solver and 42-pattern embedding."
+readme = "mazegen/README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "sabo-gla", email = "sabo-gla@student.42heilbronn.de" },
+    { name = "bgebreeg", email = "bgebreeg@student.42heilbronn.de" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mazegen*"]
+
+[tool.setuptools.package-data]
+mazegen = ["README.md"]
